@@ -4,7 +4,7 @@ import MainPage from './MainPage';
 const ControlPage = () => {
     return(
         <div>
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Routes>
                     <Route path="/" element={<MainPage />} key={1}/>
                 </Routes>
