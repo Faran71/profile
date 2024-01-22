@@ -1,0 +1,29 @@
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100vw;
+    height: 50vh;
+
+}
+
+.btn-center {
+    text-align: center;
+    width: 100vw;
+}
+.btn-center:hover {
+    background-color: lightblue;
+}
+
+.btn1{
+    /* width: 33vw; */
+    flex: 1 0 calc(50% - 5px);
+    padding: 10px;
+    text-align: center;
+    background: none;
+}
+
+.btn1 img {
+    width: 20px;
+    height: 20px;
+}
