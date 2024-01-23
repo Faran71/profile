@@ -37,10 +37,10 @@ const Buttons = () => {
             
             {clicked && (
                 <>
-                    <button className="btn1" onClick={OpenFLink}><img src="./facebook.png" /></button>
-                    <button className="btn1" onClick={OpenLLink}>Linkedin</button>
-                    <button className="btn1" onClick={OpenILink}>Instagram</button>
-                    <button className="btn1" onClick={OpenGLink}>Github</button>
+                    <button className="btn1" onClick={OpenFLink}><img src="./facebook.png" alt="Facebook"/></button>
+                    <button className="btn1" onClick={OpenLLink}><img src="./linkedin.png" alt="LinkedIn"/></button>
+                    <button className="btn1" onClick={OpenILink}><img src="./instagram.png" alt="Instagram"/></button>
+                    <button className="btn1" onClick={OpenGLink}><img src="./github.png" alt="Github"/></button>
                 </>
             )}
             {/* <button className="btn1">fun</button> */}
