@@ -1,0 +1,87 @@
+.main-page{
+    background-color: rgb(52, 49, 45);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.building-container {
+    position: relative;
+    display: inline-block;
+    
+}
+.image {
+    display: block;
+    height: 80vh;
+}
+
+@media(max-width:700px) {
+    .image{
+        width:90vw
+    }
+}
+
+/* .btn-top {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none; 
+    border-style: solid;
+    padding: 10px;
+    cursor: pointer;
+    height: 16vh;
+    transition: box-shadow 0.3s ease-in-out;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+} */
+
+/* .btn-top:hover{
+    background-color:blue;
+} */
+
+/* .coffee {
+    scale: 2;
+    background-color: black;
+} */
+
+
+.btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none; /* Example background color */
+    border-style: none;
+    padding: 10px;
+    cursor: pointer;
+    height: 14vh;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px 20px rgba(255,255,255,0.9);
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 40%; /* Position above the button */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.btn:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* .btn-top:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+} */
