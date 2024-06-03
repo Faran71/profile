@@ -20,29 +20,6 @@
     }
 }
 
-/* .btn-top {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background: none; 
-    border-style: solid;
-    padding: 10px;
-    cursor: pointer;
-    height: 16vh;
-    transition: box-shadow 0.3s ease-in-out;
-    clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
-} */
-
-/* .btn-top:hover{
-    background-color:blue;
-} */
-
-/* .coffee {
-    scale: 2;
-    background-color: black;
-} */
-
-
 .btn {
     position: absolute;
     left: 50%;
@@ -58,6 +35,8 @@
 .btn:hover {
     box-shadow: 0 0 10px 20px rgba(255,255,255,0.9);
 }
+
+
 
 .tooltip {
     visibility: hidden;
@@ -80,8 +59,3 @@
     visibility: visible;
     opacity: 1;
 }
-
-/* .btn-top:hover .tooltip{
-    visibility: visible;
-    opacity: 1;
-} */

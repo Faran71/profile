@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import "./MainPage.css"
+import { useNavigate } from "react-router-dom";
 
 const MainPage = () => {
+    const navigate = useNavigate();
 
     const imageRef = useRef(null);
     const [imageWidth, setImageWidth] = useState(0);
@@ -22,25 +24,24 @@ const MainPage = () => {
 
     return(
         <div className="main-page">
-            <p>Hi</p>
+            <p>Click any floor</p>
             <div className="building-container">
                 <img src="/building.png" alt="image" className='image' ref={imageRef}/>  
-                {/* <button className="btn-top" style={{top: '8%', width: imageWidth*1.05}}>
-                    <span className="tooltip">
-                        <img src="/coffee.png" alt="coffee" className='coffee' style={{width: imageWidth}}/>
-                    </span>
-                </button> */}
-                <button className="btn" style={{top: '28%', width: imageWidth}}>
+                <button className="btn" style={{top: '28%', width: imageWidth}}
+                onClick={() => {navigate("/AboutMe")}}>
                     <span className="tooltip">About Me</span>
                 </button>
-                <button className="btn" style={{top: '45%', width: imageWidth}}>
-                    <span className="tooltip">About You</span>
+                <button className="btn" style={{top: '45%', width: imageWidth}}
+                onClick={() => {navigate("/Projects")}}>
+                    <span className="tooltip">Projects</span>
                 </button>
-                <button className="btn" style={{top: '62%', width: imageWidth}}>
-                    <span className="tooltip">About We</span>
+                <button className="btn" style={{top: '62%', width: imageWidth}}
+                onClick={() => {navigate("/Contacts")}}>
+                    <span className="tooltip">Contacts</span>
                 </button>
-                <button className="btn" style={{top: '79%', width: imageWidth}}>
-                    <span className="tooltip">About Them</span>
+                <button className="btn" style={{top: '79%', width: imageWidth}}
+                onClick={() => {navigate("/CV")}}>
+                    <span className="tooltip">CV</span>
                 </button>
             </div>
             

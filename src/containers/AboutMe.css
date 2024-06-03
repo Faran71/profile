@@ -1,0 +1,68 @@
+.about-me-main {
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.description {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.description p {
+    width: 45vw;
+}
+
+.image-me {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: aqua;
+}
+
+.image-me img{
+    width: 40vw;
+    height: auto;
+}
+
+@media(max-width: 800px){
+    .about-me-main {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description {
+        width: 100vw;
+        height: 50vh;
+        
+    }
+    
+    .description p {
+        width: 90vw;
+    }
+
+    .image-me {
+        width: 100vw;
+        height: 50vh;
+    }
+    
+    .image-me img{
+        /* width: 70vw; */
+        width: auto;
+        height: 40vh;
+    }
+}
