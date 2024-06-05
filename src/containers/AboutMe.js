@@ -6,7 +6,6 @@ const AboutMe = () => {
         <div className="about-me-main">
             <div className="image-me">
                 <img src="/ProfilePicture.jpg"/>
-                
             </div>
             <div className="description">
                 <h1>Muhammad Faran Sarwar</h1>
