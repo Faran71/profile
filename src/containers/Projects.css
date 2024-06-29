@@ -1,0 +1,23 @@
+.projects-main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.projects-btns {
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-btns button{
+    height: 33vh;
+}
+
+.projects-display {
+    width: 69vw;
+    height: 100vh;
+}
