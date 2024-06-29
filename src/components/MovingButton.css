@@ -1,0 +1,13 @@
+.moving-button {
+    position: absolute;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.moving-button:hover {
+    background-color: #0056b3;
+}
