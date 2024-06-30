@@ -20,4 +20,6 @@
 .projects-display {
     width: 69vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }

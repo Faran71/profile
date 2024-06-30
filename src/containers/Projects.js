@@ -7,7 +7,7 @@ const Projects= () => {
     const [projectsList, setProjectsList] = useState([
         {
             title: "Personal Trainer",
-            pictures: ["https://github.com/Faran71/personal_trainer_frontend","https://github.com/Faran71/personal_trainer_backend"],
+            links: ["https://github.com/Faran71/personal_trainer_frontend","https://github.com/Faran71/personal_trainer_backend"],
             pictures: ["/personalTrainer1.png","/personalTrainer2.png","/personalTrainer3.png","/personalTrainer4.png"],
             description: "An website inspired by Strava. Created using Spring Boot and PostgreSQL for the backend and REACT for the frontend, other APIs from the internet are utilised. A user can create an account, add a workout, see previous workouts, find training plans, view food nutrition and view workouts for different bodyparts. The information for food nutrition and workouts are taken from an external API."
         },
@@ -25,7 +25,16 @@ const Projects= () => {
         }
     ])
 
-    const [currentProject, setCurrentProject] = useState(projectsList[1]);
+    const [currentProject, setCurrentProject] = useState(projectsList[2]);
+
+    const displayLinks = currentProject.links.map((element) => {
+            return(
+                <div>
+                    <p>{element}</p>
+                </div>
+            )
+        });
+    
 
 
     return(
@@ -36,7 +45,10 @@ const Projects= () => {
                 <button>E-Commerce</button>
             </div>
             <div className="projects-display">
+                <h1>{currentProject.title}</h1>
                 <Carousel images={currentProject.pictures} />
+                {displayLinks}
+                {/* <p>{currentProject.links[0]}</p> */}
             </div>
         </div>
     )
