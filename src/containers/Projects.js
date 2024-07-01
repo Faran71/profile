@@ -1,4 +1,5 @@
-import Carousel from "../components/Carousel";
+import CarouselFixed from "../components/CarouselFixed";
+import CarouselSliding from "../components/CarouselSliding";
 import "./Projects.css";
 import { useState } from "react";
 
@@ -28,28 +29,38 @@ const Projects= () => {
     const [currentProject, setCurrentProject] = useState(projectsList[2]);
 
     const displayLinks = currentProject.links.map((element) => {
-            return(
-                <div>
-                    <p>{element}</p>
-                </div>
-            )
-        });
+        return(
+            <div>
+                <p>{element}</p>
+            </div>
+        )
+    });
+
+    const displayProjects = projectsList.map((temp) => {
+        return(
+            <div className="individual-project-div">
+                <h1>{temp.title}</h1>
+            </div>
+        )
+    })
     
 
 
     return(
         <div className="projects-main">
-            <div className="projects-btns">
+            <CarouselSliding projects={projectsList} className="carousel-sliding"/>
+            {/* {displayProjects} */}
+            {/* <div className="projects-btns">
                 <button>Personal Trainer</button>
                 <button>Fake Twitter</button>
                 <button>E-Commerce</button>
             </div>
             <div className="projects-display">
                 <h1>{currentProject.title}</h1>
-                <Carousel images={currentProject.pictures} />
+                <CarouselFixed images={currentProject.pictures} />
                 {displayLinks}
-                {/* <p>{currentProject.links[0]}</p> */}
-            </div>
+                
+            </div> */}
         </div>
     )
 

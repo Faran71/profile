@@ -3,9 +3,11 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
+    align-items: center;
 
 }
-
+/* 
 .projects-btns {
     width: 20vw;
     height: 100vh;
@@ -22,4 +24,4 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-}
+} */
